@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="./imagens/logo.svg">
+            <nav class="nav_Cabecalho">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="pesquisa.html"><img src="./imagens/lupa.svg"></a></li>
+                    <li><a href="carrinho.html"><img src="./imagens/carrinho.svg"></a></li>
+                    <li><a href="login.html"><img src="./imagens/botao.svg"></a></li>
+                    <li><a href="cadastro.html"><img src="./imagens/cadastro.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main class="carrinho-principal">
+        <section class="sacola">
+
+            <article>
+                <img class="img-sacola" src="./imagens/produto1.png">
+            </article>
+
+            <article>
+                <h2>descrição do produto</h2>
+            </article>
+
+            <article>
+                <p>Cor</p>
+                <p class="desc-sacola">vermelho</p>
+            </article>
+
+            <article>
+                <p>Tamanho</p>
+                <p class="desc-sacola">5 cm</p>
+            </article>
+
+            <article>
+                <p>valor</p>
+                <p class="desc-sacola">R$ 150,00</p>
+            </article>
+
+            <article>
+                <p>Quantidade</p>
+                <p class="desc-sacola">1</p>
+            </article>
+
+        </section>
+
+                    
+
+
+        <section class="final-carrinho">
+
+            <label for="">Digite seu CEP: </label>
+            <input type="number" id="cep">
+            <button onclick="consultaEndereco()">Consultar</button>
+            <div id="resultado">
+                <p></p>
+            </div>
+                        
+            <div class="p-sacola">
+                <p>Total: R$ 150,00</p>
+                <p class="final-compra"> <a href="compra-finalizada.html">Finalizar Compra</a></p>
+                <p class="continua-compra"><a href="shop.html">Continuar comprando</a></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="itens_Rodape">
+                <ul>
+                    <li><a href="https://www.instagram.com/"> <img src="./imagens/instagram.svg"></a></li>
+                    <li><a href="https://br.pinterest.com/"> <img src="./imagens/pinterest.svg"></a></li>
+                    <li><a href="https://br.facebook.com/"> <img src="./imagens/facebook.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/carrinho.js"></script>
+
+</body>
+
+</html>

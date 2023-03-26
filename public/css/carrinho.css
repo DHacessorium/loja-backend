@@ -1,0 +1,94 @@
+.carrinho-principal {
+    width: 75rem;
+    margin: 2rem auto;
+}
+
+.img-sacola {
+    width: 250px;
+    height: 250px;
+
+}
+
+.sacola {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+
+}
+
+.sacola p {
+    margin-top: 10px;
+}
+
+.sacola h2 {
+    margin-top: 10px;
+}
+
+.desc-sacola {
+    background-color: #b3aeaed5;
+    font-size: 20px;
+}
+
+.final-carrinho {
+    display: flex;
+    
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+
+}
+
+.final-carrinho input, button {
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    height: 30px;
+}
+
+.final-carrinho button {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+}
+
+.p-sacola {
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+.p-sacola p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.p-sacola a {
+    text-decoration: none;
+}
+
+.final-compra {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.final-compra a {
+    color: white;
+}
+
+.continua-compra {
+    font-size: 20px;
+}
+
+.continua-compra a {
+    color: black;
+}

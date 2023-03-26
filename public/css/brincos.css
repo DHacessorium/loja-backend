@@ -1,0 +1,38 @@
+
+
+.principal li{
+    display: inline-block;
+}
+
+.produtos_brincos{
+    
+    text-align: center;
+    
+}
+
+.imagem-produto{
+    width: 250px;
+    margin-top: 40px;
+    
+}
+
+.nome-produto{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.preco-produto{
+   font-weight: bold;
+   padding-bottom: 5px;
+
+}
+
+.botao-produto{
+    align-items: center;
+    background-color: #007A35;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 20px;
+}

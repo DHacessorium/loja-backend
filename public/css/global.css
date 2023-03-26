@@ -1,0 +1,222 @@
+
+ /*-----------------------------CONFIGURAÇÕES GERAIS---------------------------*/
+
+ body{
+    font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      box-sizing: border-box;
+ }
+    
+   
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ main {
+   min-height: 100vh;
+   flex: 1;
+ }
+ 
+ footer {
+   flex: 1;
+ }
+ 
+
+
+ /*-----------------------------INICIO DO HEADER---------------------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin-right: 80px;
+    
+}
+
+ .cabecalho{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    background-image: url(../imagens/fundocabecalho.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    box-sizing: border-box;
+    
+ }
+
+
+ .cabecalho li{
+    display: inline-block;
+    padding-right: 30px;
+ }
+
+
+
+ /*-----------------------------FIM DO HEADER---------------------------*/
+
+
+
+
+ /*-----------------------------Inicio da principal---------------------------*/
+
+ .principal{
+    width: 1400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+ }
+
+.carrossel{
+   margin-top: 20px;
+   margin-left: 20px;
+   box-sizing: border-box;
+}
+
+ .item_carrossel{
+    width: 100%;
+    align-items: center;
+ }
+
+
+ .cards{
+   display: flex;
+   justify-content: space-around;
+   margin: 70px auto;
+   box-sizing: border-box;
+ }
+
+ .cards_imagem{
+   width: 80px;
+   height: 80px;
+ }
+
+ 
+ 
+ .banner {
+   display: flex;
+   justify-content: center;
+}
+
+.banner_item {
+   width: 50%;
+   max-width: 50%;
+   margin: 0 20px;
+}
+
+.banner_item img {
+   width: 100%;
+   height: auto;
+}
+ 
+
+ /*-------------------------FINAL DO PRINCIPAL------------------------*/
+
+ /*-------------------------------INÍCIO DO RODAPÉ-----------------*/
+
+ .rodape{
+    background-image: url(../imagens/fundocabecalho2.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    box-sizing: border-box;
+ 
+       
+  }
+ 
+  .rodape a{
+    color: aliceblue;
+  }
+ 
+  
+ 
+  .infos_rodape{
+    font-size: 15px;
+    align-items: center;
+    
+    
+    
+    
+  }
+ 
+ 
+  .redes_rodape li{
+    display: inline-block;
+    
+    
+ 
+  }
+ 
+  .logo_footer{
+    width: 60px;
+    height: auto;
+    
+  }
+ 
+  /*----------------------RESPONSIVIDADE PARA OUTROS TAMANHOS DE TELA*/
+
+  @media screen and (max-width: 768px) {
+   
+   .body{
+      height: 100%;
+   }
+
+   
+
+   .cabecalho{
+      width: 100vw;
+      text-align: center;
+   }
+      
+   .logo{
+      margin: 1px auto;
+   }
+
+   .carrossel{
+      width: 90vw;
+      
+   }
+
+   .cards{
+     display: inline-block;
+     margin-left: 150px;
+      
+   }
+
+   .banner{
+      width: 45%;
+      display: block;
+   }
+
+   .rodape{
+      position: relative;
+   }
+
+   .infos_rodape{
+      
+      display: block;
+   }
+   
+   
+   }
+  
+

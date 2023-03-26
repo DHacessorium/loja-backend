@@ -1,0 +1,99 @@
+/*---------------------------------
+Configurações gerais do body
+-----------------------------------*/
+
+body{
+    background-color: #E6E6E6;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+
+/*---------------------------------
+CSS do header
+-----------------------------------*/
+
+header{
+    width: 75rem;
+    margin: 10px auto;
+}
+
+.cabecalho{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+    
+.nav_Cabecalho{
+    display: flex;
+    
+     
+}
+
+.nav_Cabecalho li{
+    display: inline;
+	margin: 0 0 0 3rem;
+    vertical-align: middle;
+    
+}
+
+.nav_Cabecalho a{
+    text-transform: uppercase;
+	color: #00682D;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+nav li{
+    display: inline;
+}
+
+
+
+/*---------------------------------
+CSS da main
+-----------------------------------*/
+
+.principal{
+    width: 75rem;
+    margin: 2rem auto;
+    color: 00682D;
+    
+    
+}
+
+
+/*---------------------------------
+CSS do footer
+-----------------------------------*/
+
+.rodape{
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    height: 90px;
+	margin: 0 auto;
+    width: 75rem;
+    background-color: #00682D;
+}
+
+.rodape li{
+    display: inline;
+    margin-left: 25px;
+    
+}
+
+.itens_Rodape{
+    display: flex;
+	top: 20px;
+	left: 25px;
+    bottom: 30px;
+    
+
+}
+

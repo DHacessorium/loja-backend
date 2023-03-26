@@ -1,0 +1,70 @@
+.principal h1 {
+    color: #000000;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+  }
+  
+  
+  
+  .entrega {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 10px auto;
+    vertical-align: text-top;
+    
+    
+    
+    
+  
+  
+    margin-bottom: 50px;
+  }
+  
+  .entrega div p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .informacao-entrega {
+    width: 300px;
+    margin: 5px auto;
+    
+    
+
+  }
+  
+  button {
+    width: 150px;
+    height: 46px;
+    background-color: #00B850;
+    color: #FFFFFF;
+    border-radius: 15px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
+    .container-button {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    margin-right: 250px;
+  }
+
+  .container-button a{
+    color: white;
+  }
