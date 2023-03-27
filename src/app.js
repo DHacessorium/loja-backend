@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require("path")
 const app = express()
+const ejs = require("ejs")
 app.use(express.json())
 
 const routes = require('./routes/index')
@@ -8,6 +9,12 @@ const routes = require('./routes/index')
 
 // instanciando como view engine
 app.set("view engine", "ejs")
+
+//indexando Título do site e botoes da tela cadastro
+app.get('/', function(req,res){
+  res.render('index',{title: 'DH-Acessorium'});
+  res.render('index', { pageTitle: 'Cadastre-se', buttonLabel: 'Enviar' });
+});
 // instanciando pasta views
 app.set("views", path.resolve("src", "views"))
 // liberando acesso a pasta public
