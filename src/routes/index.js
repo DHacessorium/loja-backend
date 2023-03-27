@@ -1,7 +1,27 @@
 const express = require('express')
 const router = express.Router()
 
+const mainController = require('../controllers/MainControler')
 const ProductController = require('../controllers/ProductController')
+
+// Página principal
+router.get('/', mainController.home)
+// Página Pulseiras
+router.get('/pulseiras', mainController.pulseiras)
+// Página Brincos
+router.get('/brincos', mainController.brincos)
+// Página Colares
+router.get('/colares', mainController.colares)
+// Página Login
+router.get('/login', mainController.login)
+// Página Carrinho2
+router.get('/carrinho2', mainController.carrinho2)
+
+
+
+
+
+
 
 // # Product
 // GET ALL
