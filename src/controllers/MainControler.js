@@ -20,7 +20,12 @@ const MainController = {
   },
   carrinho2: (req, res) => {
     res.render('carrinho2')
+  },
+  cadastro: (req, res) => {
+    res.render('cadastro')
   }
+
+
 
 
   // search: (req, res) => {

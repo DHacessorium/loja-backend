@@ -16,6 +16,8 @@ router.get('/colares', mainController.colares)
 router.get('/login', mainController.login)
 // Página Carrinho2
 router.get('/carrinho2', mainController.carrinho2)
+// Página Cadastro
+router.get('/cadastro', mainController.cadastro)
 
 
 
