@@ -1,6 +1,6 @@
-//const products = require('../database/products.json')
+const products = require('../database/products.json')
 
-//const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 
 const MainController = {
   home: (req, res) => {
@@ -23,6 +23,15 @@ const MainController = {
   },
   cadastro: (req, res) => {
     res.render('cadastro')
+  },
+  //   indexSegundo: (req, res) => {
+  //   res.render('indexSegundo', {
+  //     products,
+  //     toThousand
+  //   })
+  // },
+  infoProduto: (req, res) => {
+    res.render('infoProduto')
   }
 
 

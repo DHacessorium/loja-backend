@@ -1,5 +1,7 @@
 const products = require('../database/products.json')
 
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+
 const ProductController = {
   showAll(req, res) {
     res.json(products)
@@ -38,6 +40,19 @@ const ProductController = {
         return res.json(products)
     }
     else return res.status(400).json({ error: 'Produto não encontrado.' })
-  }
+  },
+
+  //Trazer informações do produto pelo ID
+infoProduto: (req, res) => {
+		let id = req.params.id
+		let product = products.find(product => product.id == id)
+		res.render('infoProduto', {
+			product,
+			toThousand
+		})
+	}
 }
+
+
+
 module.exports = ProductController

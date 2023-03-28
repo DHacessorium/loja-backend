@@ -1,22 +1,42 @@
 [
-	{
-		"id": "1",
-		"name": "Tênis Adidas",
-		"price": 600
-	},
-	{
-		"id": "2",
-		"name": "Tênis Nike",
-		"price": 700
-	},
-	{
-		"id": "3",
-		"name": "Tênis Olympikus",
-		"price": 200
-	},
-	{
-		"id": "4",
-		"name": "Tênis Penalty",
-		"price": 400
-	}
+  {
+    "id": "1",
+    "name": "brinco pedra vermelha",
+    "description": "brinco legal com pedra vermelha",
+    "price": 100,
+    "discount": 50,
+    "image": "produto1.png"
+  },
+  {
+    "id": "2",
+    "name": "Corente dourada",
+    "description": "Correntão de ouro 18K",
+    "price": 15000,
+    "discount": 0,
+    "image": "produto2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "brinco com pedra rosa",
+    "description": "brinco com pedra rosa e detalhe de lua",
+    "price": 200,
+    "discount": 10,
+    "image": "produto2.png"
+  },
+  {
+    "id": "4",
+    "name": "anel com pedra rosa",
+    "description": "anel pedra rosa com detalhe de cristais",
+    "price": 2000,
+    "discount": 3,
+    "image": "produto3.png"
+  },
+  {
+    "id": "5",
+    "name": "Pulseira de flor",
+    "description": "Pulseira de flor azul com fecho",
+    "price": 299,
+    "discount": 25,
+    "image": "produto4.png"
+  }
 ]

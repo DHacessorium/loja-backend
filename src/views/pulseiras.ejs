@@ -17,22 +17,10 @@
 
 <body>
 
-  <header>
-    <nav class="cabecalho">
-      <div class="logo">
-        <a href="/"><img src="/images/logo.svg"></a>
-      </div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="pulseiras">Pulseiras</a></li>
-        <li><a href="brincos">Brincos</a></li>
-        <li><a href="colares">Colares</a></li>
-        <li><a href="carrinho2">Carrinho</a></li>
-        <li><a href="login">Login</a></li>
-      </ul>
+  <!-- Header -->
+  <%- include('includes/header') %>
 
-    </nav>
-  </header>
+
 
   <main class="principal">
     <div class="produtos_brincos">
@@ -128,47 +116,10 @@
 
     </div>
 
-
-
-
-
   </main>
 
-  <footer class="rodape">
-    <div class="infos_rodape">
-      <ul>
-        <li><a href="/">Institucional</a></li>
-        <li><a href="/">Como comprar</a></li>
-        <li><a href="/">Segurança</a></li>
-        <li><a href="/">Garantia</a></li>
-        <li><a href="/">Dúvidas frequente</a></li>
-      </ul>
-
-    </div>
-
-    <div class="infos_rodape">
-      <ul>
-        <li><a href="/"> Entregas</a></li>
-        <li><a href="/">Trocas e devoluções</a></li>
-        <li><a href="/">Políticas de Privacidade</a></li>
-        <li><a href="/">Políticas de envio</a></li>
-        <li><a href="/">Fale conosco</a></li>
-      </ul>
-    </div>
-
-    <div class="redes_rodape">
-      <ul>
-        <li><a href="https://www.facebook.com"><img class="logo_footer" src="/images/footer_face_logo.png"></a></li>
-        <li><a href="https://www.instagram.com"><img class="logo_footer" src="images/instagram.svg"></a></li>
-        <li><a href="https://www.twitter.com"><img class="logo_footer" src="/images/footer_twitter_logo.png"></a></li>
-
-      </ul>
-
-    </div>
-
-  </footer>
-
-
+  <!-- footer -->
+  <%- include('includes/footer') %>
 
   <script src="./js/script.js"></script>
 

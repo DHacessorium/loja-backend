@@ -19,6 +19,15 @@ router.get('/carrinho2', mainController.carrinho2)
 // Página Cadastro
 router.get('/cadastro', mainController.cadastro)
 
+// Página EJS com o produtos dinâmicos
+// router.get('/indexSegundo', mainController.indexSegundo)
+// Página Informações do produto
+router.get('/infoProduto', mainController.infoProduto)
+
+// Rotas para produto
+
+// GET - Trazer informações do produto
+router.get('/infoProduto/:id', ProductController.infoProduto)
 
 
 

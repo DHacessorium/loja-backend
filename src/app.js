@@ -12,8 +12,8 @@ app.set("view engine", "ejs")
 
 //indexando Título do site e botoes da tela cadastro
 app.get('/', function(req,res){
-  res.render('index',{title: 'DH-Acessorium'});
-  res.render('index', { pageTitle: 'Cadastre-se', buttonLabel: 'Enviar' });
+  res.render('home',{title: 'DH-Acessorium'});
+  res.render('home', { pageTitle: 'Cadastre-se', buttonLabel: 'Enviar' });
 });
 // instanciando pasta views
 app.set("views", path.resolve("src", "views"))
