@@ -143,21 +143,19 @@ header{
    height: auto;
 }
 
-.button-ofertas {
+.container-wrapper div {
    display: flex;
-   justify-content: center;
-   gap: 20px;
-   margin-top: 50px;
+   margin-left: 5%;
+   margin-bottom: 50px;
+
 }
 
-button {
-   padding: 20px;
-   font-size: 30px;
-   font-weight: 700;
-   border-radius: 8px;
-   background-color:white;
+.container-wrapper div img {
+   height: 150px;
+   width: 150px;
+
 }
- 
+
 
  /*-------------------------FINAL DO PRINCIPAL------------------------*/
 

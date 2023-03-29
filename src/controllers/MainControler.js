@@ -4,7 +4,10 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
 
 const MainController = {
   home: (req, res) => {
-    res.render('home')
+    res.render('home', {
+      products,
+      toThousand
+    })
   },
   pulseiras: (req, res) => {
     res.render('pulseiras')
@@ -24,27 +27,33 @@ const MainController = {
   cadastro: (req, res) => {
     res.render('cadastro')
   },
-  //   indexSegundo: (req, res) => {
-  //   res.render('indexSegundo', {
-  //     products,
-  //     toThousand
-  //   })
-  // },
+  compraFinalizada: (req, res) => {
+    res.render('compraFinalizada')
+  },
+
+
+  ofertas: (req, res) => {
+    res.render('ofertas', {
+      products,
+      toThousand
+     })
+   },
+     
   infoProduto: (req, res) => {
     res.render('infoProduto')
+  },
+
+
+
+
+  search: (req, res) => {
+    let search = req.query.keywords
+    let productsToSearch = products.filter(product => product.name.toLowerCase().includes(search))
+    res.render('results', {
+      products: productsToSearch,
+      search,
+      toThousand,
+    })
   }
-
-
-
-
-  // search: (req, res) => {
-  //   let search = req.query.keywords
-  //   let productsToSearch = products.filter(product => product.name.toLowerCase().includes(search))
-  //   res.render('results', {
-  //     products: productsToSearch,
-  //     search,
-  //     toThousand,
-  //   })
-  // }
 }
 module.exports = MainController

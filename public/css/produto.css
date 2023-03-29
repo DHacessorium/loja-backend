@@ -68,6 +68,7 @@ main {
     flex-direction: row-reverse;
     margin-top: 100px;
     margin-right: 250px;
+    gap: 20px;
   }
 
   .container-button a{

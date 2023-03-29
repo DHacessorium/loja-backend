@@ -1,10 +1,12 @@
+const routes = require('./routes/index')
 const express = require('express')
 const path = require("path")
 const app = express()
 const ejs = require("ejs")
-app.use(express.json())
+const methodOverride = require('method-override') // permite uso dos métodos PUT e DELETE
 
-const routes = require('./routes/index')
+// métodos PUT e DELETE
+app.use(methodOverride('_method'))
 
 
 // instanciando como view engine
@@ -13,7 +15,7 @@ app.set("view engine", "ejs")
 //indexando Título do site e botoes da tela cadastro
 app.get('/', function(req,res){
   res.render('home',{title: 'DH-Acessorium'});
-  res.render('home', { pageTitle: 'Cadastre-se', buttonLabel: 'Enviar' });
+  // res.render('home', { pageTitle: 'Cadastre-se', buttonLabel: 'Enviar' });
 });
 // instanciando pasta views
 app.set("views", path.resolve("src", "views"))

@@ -20,14 +20,21 @@ router.get('/carrinho2', mainController.carrinho2)
 router.get('/cadastro', mainController.cadastro)
 
 // Página EJS com o produtos dinâmicos
-// router.get('/indexSegundo', mainController.indexSegundo)
+router.get('/ofertas', mainController.ofertas)
 // Página Informações do produto
 router.get('/infoProduto', mainController.infoProduto)
-
+// Página Informações do produto
+router.get('/compraFinalizada', mainController.compraFinalizada)
 // Rotas para produto
 
 // GET - Trazer informações do produto
 router.get('/infoProduto/:id', ProductController.infoProduto)
+
+// GET - EJS Create Form - View
+router.post('/PostProduto', ProductController.PostProduto)
+// POST - EJS Create
+router.get('/criarProduto', ProductController.criarProduto)
+
 
 
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/ofertas.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <title>Ofertas</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <%- include('includes/header') %>
+
+  <div class="container-wrapper">
+    <div class="row">
+    <% products.forEach((product)=> { let finalPrice = (product.price * ((100 - product.discount) / 100)).toFixed(0) %>
+        <div>
+          <section>
+            <a href="/infoProduto/<%= product.id %>">
+              <figure>
+                <img src="/images/<%= product.image %>" alt="imagen do produto">
+              </figure>
+              <article>
+                <h2>
+                  <%= toThousand(finalPrice) %>
+                </h2>
+                <span>
+                  <%= product.discount %> %OFF
+                </span>
+                <p>
+                  <%= product.name %>
+                </p>
+                <i></i>
+              </article>
+            </a>
+          </section>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+
+  
+
+    <!-- footer -->
+    <%- include('includes/footer') %>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="./slick-1.8.1/slick/slick.js"></script>
+  <script src="./js/script.js"></script>
+
+
+
+</body>
+
+</html>

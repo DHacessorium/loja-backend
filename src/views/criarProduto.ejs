@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/ofertas.css">
+  <link rel="stylesheet" href="/css/criarProduto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <title>Incluir Produto</title>
+</head>
+
+  <body>
+    <!-- Header -->
+    <%- include('includes/header') %>
+      <!-- /Header -->
+
+      <div >
+        <div >
+          <div >
+            <h2 >Formulário de Inclusão de Produto</h2>
+          </div>
+        </div>
+        <div>
+          <form action="/product" method="POST">
+            <div>
+              <div >
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Informe o nome do produto" class="form-input">
+              </div>
+              <div >
+                <label for="price" class="form-label">Preço:</label>
+                <input type="number" id="price" name="price" placeholder="Informe o preço do produto"
+                  class="form-input">
+              </div>
+              <div >
+                <label for="discount" class="form-label">Desconto:</label>
+                <input type="number" id="discount" name="discount" placeholder="Informe o desconto do produto"
+                  class="form-input">
+              </div>
+              <div>
+                <label for="description" class="form-label">Descrição:</label>
+                <textarea name="description" id="description" class="form-input"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="buy-now-button">Salvar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('includes/footer') %>
+        <!-- /footer -->
+  </body>
+
+</html>

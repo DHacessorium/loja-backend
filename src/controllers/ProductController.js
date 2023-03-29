@@ -43,14 +43,28 @@ const ProductController = {
   },
 
   //Trazer informações do produto pelo ID
-infoProduto: (req, res) => {
+  infoProduto: (req, res) => {
 		let id = req.params.id
 		let product = products.find(product => product.id == id)
 		res.render('infoProduto', {
 			product,
 			toThousand
 		})
-	}
+	},
+  // Create form product - View
+  criarProduto: (req, res) => {
+    res.render('criarProduto')
+  },
+  // Create product
+  PostProduto: (req, res) => {
+    let newProduct = {
+			id: Number(products[products.length - 1].id) + 1,
+			...req.body,
+      image: 'default-image.png'
+		}
+    products.push(newProduct)
+    res.redirect('/')
+  },
 }
 
 
